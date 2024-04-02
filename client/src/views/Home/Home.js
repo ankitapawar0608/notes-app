@@ -17,7 +17,7 @@ function Home() {
 
     return (
         <div>
-            <h1 className='app-header'>Home</h1>
+            <h1 className='text-center text-light m-5'>All Notes</h1>
             {
                 notes.map((note)=>{
                     const {_id, title,content,category}=note

@@ -5,6 +5,9 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import NewNote from './views/NewNote/NewNote';
 import Home from './views/Home/Home';
 
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/js/bootstrap.min.js"
+
 const router = createBrowserRouter([
   {
     path:"/",

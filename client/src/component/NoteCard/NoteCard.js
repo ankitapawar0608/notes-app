@@ -3,17 +3,20 @@ import "./Note.css"
 
 function NoteCard({ _id, title, content, category }) {
   return (
-    <div>
+    <div className='container'>
 
-      <div className='note-card'>
-      <h3 className='note-card-title'>{title}</h3>
-      <p className='note-card-content'>{content}</p>
-      <span className='note-card-category'>{category}</span>
-
-
+     
+      <div className="card card-style mx-5 m-4" >
+        <div className="card-body">
+          <h5 className="card-title">{title}</h5>
+          <h6 className="card-subtitle mb-2 text-body-secondary">{content}</h6>
+          <p className="card-text">{category}</p>
+          
+        </div>
       </div>
-
     </div>
+
+   
   )
 }
 
