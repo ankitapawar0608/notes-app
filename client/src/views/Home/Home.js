@@ -23,7 +23,7 @@ function Home() {
                     const {_id, title,content,category}=note
                    return(
                   <NoteCard key={_id} _id={_id} title={title} content={content}
-                   category={category}/>
+                   category={category} loadNotes={loadNotes}/>
                    )
                 })
             }
