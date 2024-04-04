@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Note.css"
 import Bin from "./trash.png"
+import Edit from "./edit.png"
 import axios from 'axios'
  import toast from 'react-hot-toast'
 
@@ -28,11 +29,11 @@ function NoteCard({ _id, title, content, category ,loadNotes}) {
         className='delete-icon'
         onClick={deleteNote} />
 
-      {/* <Link to={`/update/${_id}`}>
-        <img src={}
+      <Link to={`/update/${_id}`}>
+        <img src={Edit}
           alt='update-icon'
           className='update-icon' />
-      </Link> */}
+      </Link>
     </div>
     </div>
 

@@ -7,7 +7,9 @@ dotenv.config();
 import Note from "./model/Note.js"
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: 'http://localhost:3000' // Allow requests from this origin
+}));
 app.use(express.json());
 
 const connectDB = async () => {
@@ -47,10 +49,6 @@ app.post("/notes", async (req, res) => {
             data: null
         })
     }
-
-    
-
-
 
     const newNote = await Note.create({
         "title": title,
@@ -126,8 +124,6 @@ app.delete("/notes/:id", async (req, res) => {
         message: "Notes deleted successfully",
         data: null
     })
-
-
 })
 
 

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import NewNote from './views/NewNote/NewNote';
+import UpdateNote from "./views/UpdateNote/UpdateNote"
 import Home from './views/Home/Home';
 import {Toaster} from "react-hot-toast"
 
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path:"/new",
     element:<NewNote/>
+  },
+  {
+    path:"/update/:id",
+    element:<UpdateNote/>
   }
 ]);
 
